@@ -1,0 +1,186 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 35px 25px 25px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Avatar Container with Pink Border */
+.avatar-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid #e91e63; /* Pink border matching the screenshot */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  background-color: #ffffff;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Profile Details */
+.profile-name {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.profile-tagline {
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.social-link {
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.2;
+}
+
+.social-link:hover {
+  color: #e91e63;
+  transform: scale(1.1);
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Follow Button (Pink) */
+.btn-follow {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+
+.btn-follow:hover {
+  background-color: #d81b60;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.25);
+}
+
+.btn-follow.active {
+  background-color: #4b5563;
+  color: #ffffff;
+}
+
+/* Message Button (Gray) */
+.btn-message {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.btn-message:hover {
+  background-color: #e5e7eb;
+}
+
+/* Card Footer */
+.card-footer {
+  width: 100%;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 18px;
+}
+
+.card-footer p {
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+/* Custom Scrollbar for compatibility */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
